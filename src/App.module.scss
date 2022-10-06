@@ -1,0 +1,12 @@
+@use '@Root/Mixins' as *;
+
+.GeneralContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.FormsContainer {
+  margin: auto;
+  padding: 40rem;
+}

@@ -1,0 +1,27 @@
+.ErrorScreenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15rem;
+  & > h2 {
+    color: red;
+    font-size: 20rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  & > svg {
+    width: 50rem;
+    height: 50rem;
+    fill: red;
+  }
+  & > h3 {
+    font-size: 16rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+  & > button {
+    margin: 0;
+    width: 400rem;
+  }
+}

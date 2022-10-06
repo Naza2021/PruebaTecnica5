@@ -1,0 +1,27 @@
+.TabSelectorContainer {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  & > div {
+    height: 28rem;
+    width: 1rem;
+    background-color: #d3dce6;
+    user-select: none;
+  }
+}
+
+.Option {
+  font-weight: 400;
+  color: #8492a6;
+  font-size: 16rem;
+  padding: 6rem;
+  border-radius: 5rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.SelectedOption {
+  background-color: #035ac5;
+  color: white;
+  cursor: default;
+}

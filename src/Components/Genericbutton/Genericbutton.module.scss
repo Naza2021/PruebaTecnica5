@@ -1,0 +1,45 @@
+@use '@Root/Mixins' as *;
+
+.GenericButton {
+  height: 52.5rem;
+  background-color: #0465dd;
+  border-radius: 5rem;
+  margin-top: 20rem;
+  transition: background-color 200ms linear;
+  border: none;
+  cursor: pointer;
+  @include hover() {
+    background-color: #045bc7;
+  }
+  &:active {
+    transition: background-color 1ms linear;
+    background-color: #034ca6 !important;
+  }
+  & > div > h2 {
+    color: white;
+    margin: 0;
+    font-size: 16rem;
+    font-weight: 600;
+  }
+}
+
+.isLoad {
+  & > div > h2 {
+    opacity: 0;
+  }
+  & > div {
+    position: relative;
+  }
+  & > div > .Loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    & > div {
+      --MainColor: white;
+      height: 25rem;
+      width: 25rem;
+      font-size: 5rem;
+    }
+  }
+}

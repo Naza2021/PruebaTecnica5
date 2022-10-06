@@ -1,0 +1,30 @@
+{
+  "name": "bitnovo-pays",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "1.0.0",
+    "dateformat": "5.0.3",
+    "ethers": "5.7.1",
+    "prettier": "2.7.1",
+    "qr-code-styling": "^1.6.0-rc.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "react-toastify": "^9.0.8"
+  },
+  "devDependencies": {
+    "@types/dateformat": "^5.0.0",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "sass": "^1.55.0",
+    "vite": "^3.1.0"
+  }
+}

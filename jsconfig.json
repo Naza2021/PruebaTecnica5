@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./src/",
+    "paths": {
+      "@Components/*": ["components/*"],
+      "@Utils/*": ["Utils/*"],
+      "@Img/*": ["Images/*"],
+      "@Hooks/*": ["Hooks/*"],
+      "@Screens/*": ["Screens/*"],
+    }
+  }
+}

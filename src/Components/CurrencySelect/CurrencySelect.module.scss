@@ -1,0 +1,102 @@
+@use '@Root/Mixins' as *;
+
+.CurrencySelect {
+  & > h3 {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8rem;
+    font-size: 14rem;
+  }
+  & > div {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    & > h1 {
+      width: 100%;
+      padding: 16rem;
+      font-size: 16rem;
+      font-weight: 700;
+      border-radius: 6rem;
+      outline: none;
+      border: 1rem solid #c0ccda;
+      transition: background-color 250ms ease;
+      margin: 0;
+      @include hover {
+        background-color: #eef5ff;
+      }
+    }
+  }
+}
+
+.Arrow {
+  width: 0;
+  height: 0;
+  margin-top: 5rem;
+  border-left: 5rem solid transparent;
+  border-bottom: 5rem solid transparent;
+  border-top: 5rem solid #000;
+  border-right: 5rem solid transparent;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-10rem, -50%);
+  transition: transform 250ms ease;
+}
+
+.ListCurrencys {
+  width: 100%;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transform: translateY(calc(100% + 25rem));
+  border-radius: 6rem;
+  border: solid 1rem #c0ccda;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms ease;
+  & > li {
+    padding: 10rem 20rem;
+    cursor: pointer;
+    @include hover {
+      background-color: #035ac5;
+      & > h2,
+      & > h3 {
+        color: white;
+      }
+    }
+    & > h2,
+    & > h3 {
+      margin: 0;
+    }
+    & > h2 {
+      font-weight: 700;
+      font-size: 16rem;
+      color: #002859;
+    }
+    & > h3 {
+      font-weight: 400;
+      color: #8492a6;
+      font-size: 12rem;
+    }
+  }
+}
+
+.VisibleCurrencySelect {
+  .ListCurrencys {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .Arrow {
+    transform: translate(-10rem, -50%) rotate(180deg);
+    margin: 0;
+  }
+  & > div > h1 {
+    background-color: #c0ccda !important;
+  }
+}

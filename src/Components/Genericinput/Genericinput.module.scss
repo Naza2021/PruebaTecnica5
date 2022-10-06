@@ -1,0 +1,35 @@
+.GenericInput {
+  & > h3 {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 7rem;
+    font-size: 14rem;
+  }
+  & > div {
+    width: 100%;
+    position: relative;
+    & > input {
+      width: 100%;
+      padding: 16rem;
+      font-size: 16rem;
+      font-weight: 700;
+      border-radius: 6rem;
+      outline: none;
+      border: 1rem solid #c0ccda;
+      &:focus {
+        border: 1rem solid #0465dd;
+      }
+    }
+    & > h2 {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      font-size: 16rem;
+      transform: translate(-10rem, -50%);
+      margin: 0;
+      & ~ input {
+        padding-right: 50rem;
+      }
+    }
+  }
+}
