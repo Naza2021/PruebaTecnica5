@@ -6,6 +6,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 import Merchantpayscreen from '@Screens/MerchantpayScreen'
 import Userpayscreen from '@Screens/UserpayScreen'
 import Showmerchantpayscreen from '@Screens/ShowMerchantPayScreen'
+import { PoweredByBitnovo } from '@Img/Images'
 
 export const Page404 = ({ customMessage, customInfo }) => {
   const navigate = useNavigate()
@@ -28,6 +29,11 @@ function App() {
           <Route path='/payment/:identifierId' element={<Userpayscreen />}></Route>
         </Routes>
       </div>
+      <footer>
+        <img src={PoweredByBitnovo} alt='Powered by bitnovo' />
+        <div />
+        <h2>© 2022 Bitnovo. All rights reserved.</h2>
+      </footer>
     </div>
   )
 }
