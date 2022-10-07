@@ -1,0 +1,9 @@
+:root {
+    --doc-height: 100%;
+   }
+   
+
+.RootContainer{
+    height: 100vh;
+    height: var(--doc-height);
+}
