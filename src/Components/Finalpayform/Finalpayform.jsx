@@ -70,6 +70,7 @@ const FinalPayForm = ({ payContext, setPayContext, isUserPay }) => {
     const TransferResponse = await setLoading(transferCoin(payContext.CurrencySelected.symbol, payContext.OrderInfo.crypto_amount, payContext.OrderInfo.address))
     if (TransferResponse.success) {
       toast.success('Transferencia realizada pronto se vera reflejada', { autoClose: 5000 })
+      return
     }
     toast.error('La transferencia fallo, prueba reintentando', { autoClose: 5000 })
   }
