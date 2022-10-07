@@ -4,7 +4,7 @@ import { abi as BEP20Abi } from '@Utils/BEP20ABI.json'
 /**@returns {string | undefined} */
 const symbolToAddress = (symbol) => {
   return {
-    USDT_T2: '0x6e3ae1c6E09bddBD14B7F60B1Fa3C3B7eaCD2D79',
+    USDT_T2: '0x110a13FC3efE6A245B50102D2d79B3E76125Ae83',
   }?.[symbol]
 }
 
