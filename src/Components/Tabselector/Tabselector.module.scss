@@ -25,3 +25,16 @@
   color: white;
   cursor: default;
 }
+
+@media (max-width: 420px) {
+  .TabSelectorContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    & > div {
+      display: none;
+    }
+  }
+  .Option {
+    margin: 0;
+  }
+}
