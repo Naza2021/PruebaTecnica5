@@ -11,6 +11,7 @@
     width: 100%;
     position: relative;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     & > h1 {
       width: 100%;
       padding: 16rem;
@@ -22,6 +23,9 @@
       transition: background-color 250ms ease;
       margin: 0;
       @include hover {
+        background-color: #eef5ff;
+      }
+      &:active {
         background-color: #eef5ff;
       }
     }
