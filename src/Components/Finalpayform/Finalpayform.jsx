@@ -72,7 +72,7 @@ const FinalPayForm = ({ payContext, setPayContext, isUserPay }) => {
       toast.success('Transferencia realizada pronto se vera reflejada', { autoClose: 5000 })
       return
     }
-    toast.error('La transferencia fallo, prueba reintentando', { autoClose: 5000 })
+    toast.error(TransferResponse.message ?? 'La transferencia fallo, prueba reintentando', { autoClose: 5000 })
   }
 
   const qrRef = useRef()
