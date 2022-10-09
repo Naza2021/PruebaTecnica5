@@ -8,6 +8,8 @@
     font-size: 20rem;
     font-weight: 700;
     margin: 0;
+    max-width: 90vw;
+    text-align: center;
   }
   & > svg {
     width: 50rem;
@@ -19,9 +21,12 @@
     font-weight: 400;
     margin: 0;
     margin-bottom: 5rem;
+    max-width: 90vw;
+    text-align: center;
   }
   & > button {
     margin: 0;
     width: 400rem;
+    max-width: 90vw;
   }
 }

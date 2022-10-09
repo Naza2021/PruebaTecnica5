@@ -7,13 +7,14 @@ import Merchantpayscreen from '@Screens/MerchantpayScreen'
 import Userpayscreen from '@Screens/UserpayScreen'
 import Showmerchantpayscreen from '@Screens/ShowMerchantPayScreen'
 import { PoweredByBitnovo } from '@Img/Images'
+import Successscreen from '@Screens/SuccessScreen'
 
 export const Page404 = ({ customMessage, customInfo }) => {
   const navigate = useNavigate()
   return (
-    <Errorscreen Message={customMessage ?? 'No se encontro la pagina'} info={customInfo ?? 'Esta pagina puede no existir o ya no estar en funcionamiento.'}>
+    <Successscreen Message={customMessage ?? 'No se encontro la pagina'} info={customInfo ?? 'Esta pagina puede no existir o ya no estar en funcionamiento.'}>
       <Genericbutton onClick={() => navigate('/')}>Ir al inicio</Genericbutton>
-    </Errorscreen>
+    </Successscreen>
   )
 }
 
